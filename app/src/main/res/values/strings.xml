@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="portfolio_title">Portfolio</string>
+    <string name="positions_tab">POSITIONS</string>
+    <string name="holdings_tab">HOLDINGS</string>
+    <string name="profit_loss_title">Profit &amp; Loss*</string>
+    <string name="current_value">Current value*</string>
+    <string name="total_investment">Total investment*</string>
+    <string name="today_profit_loss">Today\'s Profit &amp; Loss*</string>
+    <string name="net_qty">NET QTY: %1$d</string>
+    <string name="net_qty_label">NET QTY: </string>
+    <string name="ltp">LTP: %1$s</string>
+    <string name="ltp_label">LTP: </string>
+    <string name="pnl">P&amp;L: %1$s</string>
+    <string name="pnl_label">P&amp;L: </string>
+    <string name="error_loading_data">Error loading data</string>
+    <string name="retry">Retry</string>
+    <string name="t1_holding">T1 Holding</string>
+    <string name="stock_placeholder">STOCK</string>
+    <string name="currency_zero">₹ 0.00</string>
+    <string name="currency_zero_percent">₹ 0.00 (0.00%)</string>
+    <string name="quantity_zero">0</string>
+    <string name="profit_amp_loss"><![CDATA[Profit & Loss*]]></string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="expand">Expand</string>
+    <string name="profile">Profile</string>
+</resources>
