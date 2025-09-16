@@ -110,11 +110,8 @@ class PortfolioViewModelTest {
                 ltp = 100.0,
                 avgPrice = 90.0,
                 close = 95.0,
-                dayChange = 0.0,
-                dayChangePercent = 0.0,
                 totalPnL = 10.0,
-                totalPnLPercent = 11.11,
-                holdingType = null
+                totalPnLPercent = 11.11
             )
         )
 

@@ -7,10 +7,6 @@ import javax.inject.Inject
 class HoldingsMapper @Inject constructor() {
     
     fun mapToDomain(dto: HoldingDto): Holding {
-        // Calculate day change and percentage
-        val dayChange = dto.ltp - dto.close
-        val dayChangePercent = if (dto.close > 0) (dayChange / dto.close) * 100 else 0.0
-        
         // Calculate total P&L and percentage
         val totalPnL = (dto.ltp - dto.avgPrice) * dto.quantity
         val totalPnLPercent = if (dto.avgPrice > 0) (totalPnL / (dto.avgPrice * dto.quantity)) * 100 else 0.0
@@ -21,11 +17,8 @@ class HoldingsMapper @Inject constructor() {
             ltp = dto.ltp,
             avgPrice = dto.avgPrice,
             close = dto.close,
-            dayChange = dayChange,
-            dayChangePercent = dayChangePercent,
             totalPnL = totalPnL,
-            totalPnLPercent = totalPnLPercent,
-            holdingType = null // Not provided in API response
+            totalPnLPercent = totalPnLPercent
         )
     }
     

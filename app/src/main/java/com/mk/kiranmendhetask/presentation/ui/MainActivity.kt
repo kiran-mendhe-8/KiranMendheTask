@@ -11,7 +11,9 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mk.kiranmendhetask.R
 import com.mk.kiranmendhetask.databinding.ActivityMainBinding
+import com.mk.kiranmendhetask.domain.model.PortfolioSummary
 import com.mk.kiranmendhetask.presentation.adapter.HoldingsAdapter
+import com.mk.kiranmendhetask.presentation.viewmodel.PortfolioUiState
 import com.mk.kiranmendhetask.presentation.viewmodel.PortfolioViewModel
 import com.mk.kiranmendhetask.utils.formatCurrency
 import com.mk.kiranmendhetask.utils.formatPercentage
@@ -64,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun handleUiState(state: com.mk.kiranmendhetask.presentation.viewmodel.PortfolioUiState) {
+    private fun handleUiState(state: PortfolioUiState) {
         when {
             state.isLoading -> {
                 binding.progressBar.visibility = View.VISIBLE
@@ -93,7 +95,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun updatePortfolioSummary(summary: com.mk.kiranmendhetask.domain.model.PortfolioSummary) {
+    private fun updatePortfolioSummary(summary: PortfolioSummary) {
         // Update collapsed state
         val totalPnLText =
             "${summary.totalPnL.formatCurrency()} (${summary.totalPnLPercent.formatPercentage()})"

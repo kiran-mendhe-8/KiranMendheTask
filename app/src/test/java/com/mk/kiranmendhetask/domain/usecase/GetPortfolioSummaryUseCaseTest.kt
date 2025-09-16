@@ -89,11 +89,8 @@ class GetPortfolioSummaryUseCaseTest {
                 ltp = 100.0,
                 avgPrice = 90.0,
                 close = 95.0,
-                dayChange = 5.0,
-                dayChangePercent = 5.26,
                 totalPnL = 100.0,
-                totalPnLPercent = 11.11,
-                holdingType = "EQ"
+                totalPnLPercent = 11.11
             ),
             Holding(
                 symbol = "TEST2",
@@ -101,11 +98,8 @@ class GetPortfolioSummaryUseCaseTest {
                 ltp = 200.0,
                 avgPrice = 180.0,
                 close = 190.0,
-                dayChange = 10.0,
-                dayChangePercent = 5.26,
                 totalPnL = 100.0,
-                totalPnLPercent = 11.11,
-                holdingType = "EQ"
+                totalPnLPercent = 11.11
             )
         )
 
