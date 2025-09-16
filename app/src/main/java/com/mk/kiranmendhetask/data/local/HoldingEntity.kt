@@ -11,9 +11,6 @@ data class HoldingEntity(
     val ltp: Double, // Last Traded Price
     val avgPrice: Double, // Average Price
     val close: Double, // Previous Close Price
-    val dayChange: Double, // Day Change
-    val dayChangePercent: Double, // Day Change Percentage
     val totalPnL: Double, // Total Profit & Loss
-    val totalPnLPercent: Double, // Total Profit & Loss Percentage
-    val holdingType: String? = null // T1 Holding, etc.
+    val totalPnLPercent: Double // Total Profit & Loss Percentage
 )

@@ -12,11 +12,8 @@ class LocalMapper @Inject constructor() {
             ltp = entity.ltp,
             avgPrice = entity.avgPrice,
             close = entity.close,
-            dayChange = entity.dayChange,
-            dayChangePercent = entity.dayChangePercent,
             totalPnL = entity.totalPnL,
-            totalPnLPercent = entity.totalPnLPercent,
-            holdingType = entity.holdingType
+            totalPnLPercent = entity.totalPnLPercent
         )
     }
     
@@ -27,11 +24,8 @@ class LocalMapper @Inject constructor() {
             ltp = domain.ltp,
             avgPrice = domain.avgPrice,
             close = domain.close,
-            dayChange = domain.dayChange,
-            dayChangePercent = domain.dayChangePercent,
             totalPnL = domain.totalPnL,
-            totalPnLPercent = domain.totalPnLPercent,
-            holdingType = domain.holdingType
+            totalPnLPercent = domain.totalPnLPercent
         )
     }
     

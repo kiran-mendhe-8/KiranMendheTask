@@ -33,11 +33,8 @@ class GetHoldingsUseCaseTest {
                 ltp = 100.0,
                 avgPrice = 90.0,
                 close = 95.0,
-                dayChange = 5.0,
-                dayChangePercent = 5.26,
                 totalPnL = 100.0,
-                totalPnLPercent = 11.11,
-                holdingType = "EQ"
+                totalPnLPercent = 11.11
             )
         )
         coEvery { repository.getHoldings() } returns Result.success(expectedHoldings)
